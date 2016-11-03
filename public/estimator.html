@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Estimator Tool</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/nouislider.min.css">
+
+  </head>
+  <body>
+    <div class="estimator-tool-container">
+      <img class="tpp-logo" src="images/TPP.svg" alt="" />
+      <h2>APPROXIMATELY HOW MUCH COULD YOU EARN ANNUALLY BY USING TRIPPLANZ?</h2>
+      <div class="annual-earnings">
+        <div class="earnings-figure">
+          <div class="number-alt">$</div>
+        </div>
+        <div class="hashtag">
+          <img class="giveback-img" src="images/giveback.svg" alt="TripPlanz Give Back" />
+        </div>
+      </div>
+
+      <form id="earnings-form">
+
+        <div id="who-radios">
+          <p>
+            Are you a:
+          </p>
+          <div class="radio-input">
+            <label><input class="radio" type='radio' name='who' value='1' checked>Company or Venue</label>
+          </div>
+          <div class="radio-input">
+            <label><input class="radio" type='radio' name='who' value='2'>Event</label>
+          </div>
+          <div class="radio-input">
+            <label><input class="radio" type='radio' name='who' value='3'>Event Ticketing Company</label>
+          </div>
+          <div class="radio-input">
+            <label><input class="radio" type='radio' name='who' value='4'>Venue Listing Company</label>
+          </div>
+        </div>
+
+        <div id="provide-radios">
+          <p>
+            Do you provide systems to companies, events, or venues?
+          </p>
+          <div class="radio-input">
+            <label><input class="radio" type='radio' name='provide' value='0.1'>Yes</label>
+          </div>
+          <div class="radio-input">
+            <label><input class="radio" type='radio' name='provide' value='0' checked>No</label>
+          </div>
+        </div>
+
+        <p class="light">If you are a software firm that provides your product to multiple organizations that fit these characteristics, answer the following questions in the aggregate for all of your clients</p>
+        <div class="line-seperator"></div>
+
+        <div id="people-visit-container" class="ui-slider">
+          <p>How many visitors do you have to your site annually?</p>
+          <div id="people-visit-slider"></div>
+        </div>
+
+        <div id="event-attendees-container" class="ui-slider">
+          <p>How many attendees do you have to your event(s) each year?</p>
+          <div id="event-attendees-slider"></div>
+        </div>
+
+        <div id="attendees-container" class="ui-slider">
+          <p>How many attendees do you have at your event(s) each year?</p>
+          <div id="attendees-slider"></div>
+        </div>
+
+        <div id="unique-visitors-container" class="ui-slider">
+          <p>How many unique visitors do you have to your site per month?</p>
+          <div id="unique-visitors-slider"></div>
+        </div>
+
+        <div class="ui-slider outof-town-container">
+          <p>What percentage of the visitors are likely to need or want a hotel room (whether local or out of town)?</p>
+          <div id="outof-town-slider"></div>
+        </div>
+
+        <div class="ui-slider nights-stay-container">
+          <p>What is the average number of nights that visitors or event attendees would stay?</p>
+          <div id="nights-stay-slider"></div>
+        </div>
+
+        <div class="ui-slider engagement-container">
+          <p>We typically estimate 1% engagement if you insert The TripPlanz Widget on the event or venue page or a VISIT US page. Click on the additional marketing placement you are willing to commit to and we'll show you the estimated impact on engagement.</p>
+          <div class="checkbox-container">
+            <div class="checkbox-input">
+              <label><input class="checkbox" type='checkbox' id='homepage' value='1'>Home Page Link</label>
+            </div>
+            <div class="checkbox-input">
+              <label><input class="checkbox" type='checkbox' id='navigation' value='3'>Primary Navigation</label>
+            </div>
+            <div class="checkbox-input">
+              <label><input class="checkbox" type='checkbox' id='placements' value='2'>2+ Placements</label>
+            </div>
+            <div class="checkbox-input">
+              <label><input class="checkbox" type='checkbox' id='registration' value='5'>Embed in Ticketing/Registration Process</label>
+            </div>
+            <div class="checkbox-input">
+              <label><input class="checkbox" type='checkbox' id='email' value='3'>Embed in Confirmation Email</label>
+            </div>
+          </div>
+
+          <div id="engagement-slider"></div>
+        </div>
+      </form>
+      <div class="disclaimer">
+        <p>
+          (*) This tool is to help you predict performance and estimate results for high level planning.  These results are based on other customers’ experience and best practices.  Situations vary and Solutionz offers no guarantee of these results.  The TripPlanz implementation team is happy to work with you to ensure the best results.  The actual results will depend on the actual average daily room rate for the bookings made on your site or blog, plus the average length of stay. Payment will be made quarterly for booking royalties and annually for charitable contribution.
+        </p>
+      </div>
+      <p class="copyright">
+        @ Copyright 2016 Solutionz Technologies LLC TripPlanzPredictor&trade; is a part of the TripPlanz Toolkit&trade;
+      </p>
+
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/wNumb.js"></script>
+    <script type="text/javascript" src="scripts/nouislider.min.js"></script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+
+  </body>
+
+</html>

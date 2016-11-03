@@ -1,0 +1,22 @@
+{
+  "name": "predictorz",
+  "version": "1.0.0",
+  "description": "TripPlanz Predictor Tool",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kohku/predictorz.git"
+  },
+  "author": "Daniel Cruz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kohku/predictorz/issues"
+  },
+  "homepage": "https://github.com/kohku/predictorz#readme",
+  "devDependencies": {
+    "express": "^4.14.0"
+  }
+}
