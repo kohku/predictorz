@@ -129,6 +129,7 @@ addEngagementEventListeners(document.getElementById('navigation'), 3)
 addEngagementEventListeners(document.getElementById('placements'), 2)
 addEngagementEventListeners(document.getElementById('registration'), 5)
 addEngagementEventListeners(document.getElementById('email'), 3)
+addEngagementEventListeners(document.getElementById('integrated'), 5)
 
 $(function(){
   calculateEstimation();
@@ -234,7 +235,7 @@ function calculateEstimation() {
   console.log('grossSales', grossSales);
   var grossRevenue = grossSales*(ACR/ADR);
   var royalty = grossRevenue * 0.1;
-  royalty =royalty + (royalty*royaltyMultiplier);
+  royalty = royalty * royaltyMultiplier; // estimate should be doubled
   var split = (""+royalty.toFixed(0)).split("");
 
   var html = '';
