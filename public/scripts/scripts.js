@@ -81,15 +81,69 @@ var outoftown_values = [0, 5, 10, 25, 50, 75, 100];
 
 //Number of nights a someone stays and slider
 var nights_range = {
-	'min': [     1, 1 ],
+  'min': [     1, 1 ],
+  '1%': [   1.1,  1 ],
+  '2%': [   1.2,  1 ],
+  '3%': [   1.3,  1 ],
+  '4%': [   1.4,  1 ],
+  '5%': [   1.5,  1 ],
+  '6%': [   1.6,  1 ],
+  '7%': [   1.7,  1 ],
+  '8%': [   1.8,  1 ],
+  '9%': [   1.9,  1 ],
   '10%': [   2,  1 ],
+  '11%': [   2.1,  1 ],
+  '12%': [   2.2,  1 ],
+  '13%': [   2.3,  1 ],
+  '14%': [   2.4,  1 ],
+  '15%': [   2.5,  1 ],
+  '16%': [   2.6,  1 ],
+  '17%': [   2.7,  1 ],
+  '18%': [   2.8,  1 ],
+  '19%': [   2.9,  1 ],
   '20%': [   3,  1 ],
+  '21%': [   3.1,  1 ],
+  '22%': [   3.2,  1 ],
+  '23%': [   3.3,  1 ],
+  '24%': [   3.4,  1 ],
+  '25%': [   3.5,  1 ],
+  '26%': [   3.6,  1 ],
+  '27%': [   3.7,  1 ],
+  '28%': [   3.8,  1 ],
+  '29%': [   3.9,  1 ],
   '30%': [   4,  1 ],
+  '31%': [   4.1,  1 ],
+  '32%': [   4.2,  1 ],
+  '33%': [   4.3,  1 ],
+  '34%': [   4.4,  1 ],
+  '35%': [   4.5,  1 ],
+  '36%': [   4.6,  1 ],
+  '37%': [   4.7,  1 ],
+  '38%': [   4.8,  1 ],
+  '39%': [   4.9,  1 ],
   '40%': [   5,  1 ],
+  '41%': [   5.1,  1 ],
+  '42%': [   5.2,  1 ],
+  '43%': [   5.3,  1 ],
+  '44%': [   5.4,  1 ],
+  '45%': [   5.5,  1 ],
+  '46%': [   5.6,  1 ],
+  '47%': [   5.7,  1 ],
+  '48%': [   5.8,  1 ],
+  '49%': [   5.9,  1 ],
   '50%': [   6,  1 ],
+  '51%': [   6.1,  1 ],
+  '52%': [   6.2,  1 ],
+  '53%': [   6.3,  1 ],
+  '54%': [   6.4,  1 ],
+  '55%': [   6.5,  1 ],
+  '56%': [   6.6,  1 ],
+  '57%': [   6.7,  1 ],
+  '58%': [   6.8,  1 ],
+  '59%': [   6.9,  1 ],
   '60%': [   7,  1 ],
   '80%': [   14,  2 ],
-	'max': [ 30 ]
+  'max': [ 30 ]
 };
 var nights_values = [1, 2, 3, 4, 5, 6, 7, 14, 30];
 
@@ -118,7 +172,7 @@ createNewSlider(eventAttendeeSlider, 100, range_event, range_event_values, 2, to
 createNewSlider(attendeeSlider, 25000, event_ticketing_range, event_ticketing_values, 1, tooltip);
 createNewSlider(uniqueVisitors, 100000, venue_range, venue_values, 1, tooltip);
 createNewSlider(outOfTown, 25, outoftown_range, outoftown_values, 1, tooltip, '%', '');
-createNewSlider(nightStay, 1, nights_range, nights_values, 1, tooltip);
+createNewSlider(nightStay, 1, nights_range, nights_values, 1, [wNumb({ decimals: 1, thousand: ',' })]);
 createNewSlider(engagement, 1, engagement_range, engagement_values, 1, tooltip, '%', '');
 
 /***************
