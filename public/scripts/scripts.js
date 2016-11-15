@@ -281,7 +281,7 @@ function calculateEstimation() {
 
   var selectWho = $('input[name=who]:checked', '#earnings-form').val();
   var visitors = selectWho == 1 ? travelers : selectWho == 2 ? eventAttendees : selectWho == 3 ? attendees : uniques;
-  var royaltyMultiplier = $('input[name=provide]:checked', '#earnings-form').val();
+  var royaltyMultiplier = parseFloat($('input[name=provide]:checked', '#earnings-form').val());
 
   //Start Calculation
   var numTravelers = visitors*travelingPercentage*12*engagementPercentage;
@@ -289,7 +289,7 @@ function calculateEstimation() {
   console.log('grossSales', grossSales);
   var grossRevenue = grossSales*(ACR/ADR);
   var royalty = grossRevenue * 0.1;
-  royalty = royalty * royaltyMultiplier; // estimate should be doubled
+  royalty = royaltyMultiplier > 0 ? (royalty * royaltyMultiplier) : royalty; // estimate should be doubled
   var split = (""+royalty.toFixed(0)).split("");
 
   var html = '';
